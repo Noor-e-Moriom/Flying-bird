@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+    <div id="banner">
+        <div id="fly-box">
+            <img src="image/dove.png" alt="" class="first-img">
+            <!-- <img src="image/dove.png" alt="" class="second-img">
+            <img src="image/dove.png" alt="" class="third-img"> -->
+            
+        </div>
+    </div>
+
+    <script>
+        $('#banner').mousemove(function(e){
+            var moveX = (e.pageX * -1/2)+300;
+            var moveY = (e.pageY * -1/3)+120;
+            $('#fly-box').css({
+                'transform' : 'translate3d('+moveX+'px,'+moveY+'px,0)'
+            });
+       
+        });
+       
+        
+        
+    </script>
+    </body>
+</html>
